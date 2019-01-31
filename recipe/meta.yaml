@@ -1,6 +1,6 @@
 {% set name = "ligo-lvalert" %}
-{% set version = "1.5.4" %}
-{% set sha256 = "7f09a519f6a38319bd9df00368898ed0c4694c6fdb82f9a520e96147343d7ada" %}
+{% set version = "1.5.5.post1" %}
+{% set sha256 = "bf41f8319424a3cb8b86cee3709f11159f32a8606ed1c25a5b46ceea6d149902" %}
 
 package:
   name: {{ name }}
