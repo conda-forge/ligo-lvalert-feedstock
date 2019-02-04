@@ -1,0 +1,24 @@
+diff --git a/ligo/lvalert/__init__.py b/ligo/lvalert/__init__.py
+index 40d2939..76b88a9 100755
+--- a/ligo/lvalert/__init__.py
++++ b/ligo/lvalert/__init__.py
+@@ -89,8 +89,8 @@ def catch_exception(f):
+         try:
+             return f(*args, **kwargs)
+         except Exception as e:
+-            print 'Caught an exception in', f.__name__, ":"
+-	    print(e)
++            print('Caught an exception in ', f.__name__, ":")
++            print(e)
+     return func
+ 
+ 
+@@ -181,7 +181,7 @@ class LVAlertClient(sleekxmpp.ClientXMPP):
+ 
+     @catch_exception
+     def _pubsub_publish(self, msg):
+-	if msg['type'] in ('chat', 'normal'):
++        if msg['type'] in ('chat', 'normal'):
+             self._callback(msg['pubsub_event']['items']['node'],
+                            msg['pubsub_event']['items']['item']['payload'].text)
+ 
