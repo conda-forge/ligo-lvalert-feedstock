@@ -20,8 +20,9 @@ tools for interacting with the LVAlert jabber server.
 Current build status
 ====================
 
-All platforms:
-[![noarch](https://img.shields.io/circleci/project/github/conda-forge/ligo-lvalert-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/ligo-lvalert-feedstock)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/ligo-lvalert-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/ligo-lvalert-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/ligo-lvalert-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/ligo-lvalert-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/ligo-lvalert-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/ligo-lvalert-feedstock/branch/master)
 
 Current release info
 ====================
