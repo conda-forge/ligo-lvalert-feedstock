@@ -1,6 +1,6 @@
 {% set name = "ligo-lvalert" %}
-{% set version = "1.5.5" %}
-{% set sha256 = "56690ec7094601c0919a9d805873ad22be2450475c8f5f5f889d49ee6353546a" %}
+{% set version = "1.5.6" %}
+{% set sha256 = "43a18d76f60592a4bf39b9b1be5a64ce70a7e45fc746e04d9f499f79390cb59b" %}
 
 package:
   name: {{ name }}
@@ -10,8 +10,6 @@ source:
   fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   sha256: {{ sha256 }}
-  patches:
-    - fix-parentheses.patch
 
 build:
   number: 0
@@ -29,7 +27,6 @@ requirements:
     - six
     - ligo-common
     - sleekxmpp
-    - m2crypto
     - dnspython
     - numpy
 
